@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000">
+
+        <!--Camera-->
+        <a-entity position="0 20 60">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-assets>
+            <img id="ground" src="./assets/floor.jpg"/>
+            <img id= 'wall' src= "./assets/wall.jpg"/>
+            <img id= 'painting1' src= './assets/painting1.jpg'/>
+            <img id= 'painting3' src= './assets/painting3.jpeg'/>
+            <img id= 'painting2' src= './assets/painting2.cms'/>
+            <img id= "ground1" src="./assets/ground.jpg"/>
+            <img id= "dining" src="./assets/dining.jpg"/>
+            <img id= "chair" src="./assets/chair.jpeg"/>
+          </a-assets>
+
+        <a-entity>
+            <a-plane src= '#ground1' height="50" width="80" rotation="-90 0 0"></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-box src= '#wall' position= '0 20 -25' height= '70' width= '80'></a-plane>
+        </a-entity>
+
+
+        <!-- Paintings -->
+        <a-entity>
+            <a-box src= '#painting1' position= '-25 25 -20' height= '25' width= '20'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-box src= '#painting2' position= '25 25 -20' height= '25' width= '20'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-box src= '#painting3' position= '0 25 -20' height= '25' width= '20'></a-plane>
+        </a-entity>
+
+
+        <!-- Dinning Table -->
+        <a-entity>
+            <a-plane src= '#ground' height="25" width="25" rotation="-90 0 0" roughness= '2'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#dining' height="15" width="25" rotation="0 0 0" radius= '3.5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-box src= '#dining' height="20" width="40" rotation="-90 0 0" position= '0 8 0'></a-plane>
+        </a-entity>
+
+
+        <!-- Chair1 -->
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="0 0 0" position= '-30 0 3' radius= '5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="10" width="40" rotation="0 0 0" position= '-30 0 3' radius= '1'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="0 0 0" position= '-30 5 3' radius= '5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="-90 -90 0" position= '-33 10 3' radius= '5'></a-plane>
+        </a-entity>
+
+
+        <!-- Chair2 -->
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="0 0 0" position= '30 0 3' radius= '5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="10" width="40" rotation="0 0 0" position= '30 0 3' radius= '1'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="0 0 0" position= '30 5 3' radius= '5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src= '#chair' height="0" width="40" rotation="-90 -90 0" position= '33 10 3' radius= '5'></a-plane>
+        </a-entity>
+
+        
+        <!-- Light -->
+        <a-entity>
+            <a-cylinder color= 'pink' height="15" width="40" rotation="0 0 0" position= '0 40 0' radius= '0.5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder color= 'pink' height="3" width="40" rotation="0 0 0" position= '0 32 0' radius= '4.5'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder color= 'pink' height="0" width="10" rotation="0 0 0" position= '0 30 0' radius= '8'></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-sphere color= 'yellow' height="0" width="10" rotation="0 0 0" position= '0 30 0' radius= '4'></a-plane>
+        </a-entity>
+
+    </a-scene>    
+</body>
+</html>
